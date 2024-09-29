@@ -163,7 +163,7 @@
             <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#topics">Topics</a>
+            <a class="nav-link" aria-current="page" href="#topics">Topics of Interest</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#submission">Submission Details</a>
@@ -201,34 +201,40 @@
 
 <main>
 
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/philadelphia.jpg" class="d-block w-100" alt="Philadelphia Skyline">
-        <div class="container">
-          <div class="carousel-caption" style="color: rgb(245, 245, 245);">
-            <h1>The 1st Workshop on AI for Urban Planning</h1>
-            <p>AAAI 2025's Workshop</p>
-            <p><a class="btn btn-lg btn-primary" href="http://www.cloud-conf.net/AAAI2025/index.html">Learn more</a></p>
+  <div class="carousel-container" style="max-width: 100%; overflow: hidden;">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/philadelphia.jpg" class="d-block w-100" alt="Philadelphia Skyline" style="width: 100%; height: auto; object-fit: cover; min-height: 300px;">
+          <div class="container">
+            <div class="carousel-caption" style="color: white; background-color: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 10px; max-width: 100%;">
+              <h1 style="font-size: 5vw; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">The 1st Workshop on AI for Urban Planning</h1>
+              <p style="font-size: 3vw; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">AAAI 2025's Workshop</p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.cloud-conf.net/AAAI2025/index.html">Learn more</a></p>
+            </div>
           </div>
         </div>
+        <!-- 其他轮播项 -->
       </div>
-      <!-- 你可以继续添加其他轮播项 -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-</div>
+  </div>
+  
+  
+  
+  
 
 
 
@@ -245,7 +251,8 @@
     <h1 id="home">Home</h1>
     <div class="row featurette">
       <div class="col-md-12" >
-        <p class="lead" style="margin-top: 30px;">Urban planning faces increasingly complex challenges due to rapid urbanization, population growth, and the imperative to create sustainable, resilient cities. Traditional urban planning approaches often struggle to keep pace with the dynamic nature of urban environments, leading to inefficiencies in resource allocation, transportation systems, and infrastructure development. Moreover, the advent of new technologies and data sources has generated vast amounts of urban data, presenting both opportunities and challenges in harnessing this data to inform decision-making processes. Artificial Intelligence (AI) holds immense potential to revolutionize urban planning by enabling data-driven insights, predictive modeling, and optimization techniques to address these challenges effectively. Leveraging AI techniques such as machine learning, multimodal learning, generative modeling, optimization, and reinforcement learning can enhance the understanding of complex urban systems, optimize resource allocation, and facilitate evidence-based policy-making. Organizing a workshop on “AI for Urban Planning” in conjunction with AAAI 2025 is not only timely but imperative, as it provides a premier platform to convene top researchers, practitioners, and policymakers in the field of AI. This workshop will serve as a catalyst for interdisciplinary discussions, showcase cutting-edge research, and foster collaborations to advance the state-of-the-art in AI for Urban Planning. By harnessing the collective expertise of the AAAI community, we can accelerate the development and adoption of innovative solutions to address pressing urban challenges, ultimately creating more sustainable, equitable, and resilient cities for the future.
+        <p class="lead" style="margin-top: 30px; text-align: justify;">
+          The 1st Workshop on AI for Urban Planning aims to bring together researchers, practitioners, and policymakers to explore innovative AI-driven solutions for the multifaceted challenges in urban planning. As cities face rapid urbanization and the pressing need for sustainability, there is an urgent demand for advanced strategies in better land utilization, resource optimization, infrastructure development, improved equity, data-driven policymaking, as well as the better understanding of complex interdependencies between physical and virtual spaces. This workshop will delve into the latest AI technologies to build sustainable, diverse, and human-centric cities of the future.
         </p>
       </div>
 
@@ -256,89 +263,106 @@
     <hr class="featurette-divider" style="margin: 60px 0;">
 
 
-<h1 id="topics">Topics</h1>
+<h1 id="topics">Topics of Interest</h1>
 <div class="row featurette">
   <div class="col-md-12">
-    <p style="margin-top: 30px;"><b>We encourage submissions on a broad range of AI for Urban Planning. Topics of interest include but are not limited to theories, algorithms, applications, systems, and tools, such as:</b></p>
+    <p style="margin-top: 30px;"><b>We encourage submissions on a broad range of topics related to AI in urban planning, including but not limited to:</b></p>
 
     <ul class="list-group">
-      <li class="list-group-item list-group-item-primary"><b>Representation and quantification of urban environment</b>
+      <li class="list-group-item list-group-item-primary"><b>Representation and Quantification of Urban Environments</b>
         <ul class="list-group list-group-numbered">
           <li class="list-group-item">Representation learning for spatio-temporal data</li>
           <li class="list-group-item">Multimodal data fusion</li>
-          <li class="list-group-item">Graph neural networks in representing urban forms</li>
-          <li class="list-group-item">Multi-view learning</li>
-          <li class="list-group-item">Domain shift & generalization</li>
+          <li class="list-group-item">Graph neural networks in urban form representation</li>
+          <li class="list-group-item">Domain shift and generalization in urban data</li>
         </ul>
       </li>
     </ul>
-
+    
     <ul class="list-group" style="margin-top: 16px;">
-      <li class="list-group-item list-group-item-warning"><b>Predictive modeling with urban data</b>
+      <li class="list-group-item list-group-item-success"><b>Human Dynamics for Urban Planning</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Reconceptualizing Human Behavior Using AI Models</li>
+          <li class="list-group-item">Human-Robot/AI Interactions</li>
+          <li class="list-group-item">Exploring Human Dynamics Beyond Physical Spaces through AI and Virtual Environments</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <ul class="list-group" style="margin-top: 16px;">
+      <li class="list-group-item list-group-item-warning"><b>Predictive Modeling and Forecasting</b>
         <ul class="list-group list-group-numbered">
           <li class="list-group-item">Urban time series forecasting</li>
           <li class="list-group-item">Spatio-temporal forecasting (e.g., energy, traffic, crowd flow)</li>
-          <li class="list-group-item">Demographic prediction</li>
-          <li class="list-group-item">City climate modeling</li>
+          <li class="list-group-item">Demographic and climate modeling</li>
         </ul>
       </li>
     </ul>
-
+    
     <ul class="list-group" style="margin-top: 16px;">
-      <li class="list-group-item list-group-item-danger"><b>Generative modeling, AIGC, and large models for urban planning</b>
+      <li class="list-group-item list-group-item-danger"><b>Generative Modeling and Large AI Models for Urban Planning</b>
         <ul class="list-group list-group-numbered">
-          <li class="list-group-item">Urban form design</li>
-          <li class="list-group-item">Land use configuration</li>
-          <li class="list-group-item">Architecture design</li>
-          <li class="list-group-item">Landscape design</li>
-          <li class="list-group-item">Transportation system design (e.g., road network)</li>
+          <li class="list-group-item">Urban form and land use configuration</li>
+          <li class="list-group-item">Transportation system design</li>
+          <li class="list-group-item">Architecture and landscape design</li>
         </ul>
       </li>
     </ul>
-
+    
     <ul class="list-group" style="margin-top: 16px;">
-      <li class="list-group-item list-group-item-success"><b>Evaluation and simulation</b>
+      <li class="list-group-item list-group-item-info"><b>Evaluation and Simulation</b>
         <ul class="list-group list-group-numbered">
-          <li class="list-group-item">Reinforcement learning powered simulation</li>
-          <li class="list-group-item">LLM agent for evaluation and simulation (i.e., stakeholder role-play)</li>
+          <li class="list-group-item">Reinforcement learning-powered simulations</li>
+          <li class="list-group-item">LLM agents for evaluation and stakeholder role-play</li>
           <li class="list-group-item">Human-in-the-loop simulation</li>
-          <li class="list-group-item">LLM-in-the-loop simulation</li>
         </ul>
       </li>
     </ul>
-
+    
     <ul class="list-group" style="margin-top: 16px;">
-      <li class="list-group-item list-group-item-info"><b>Ethics of AI in urban planning</b>
+      <li class="list-group-item list-group-item-secondary"><b>Ethics and Fairness in AI for Urban Planning</b>
         <ul class="list-group list-group-numbered">
-          <li class="list-group-item">Fairness and bias</li>
-          <li class="list-group-item">Community engagement</li>
-          <li class="list-group-item">Transparency and accountability</li>
-          <li class="list-group-item">Data privacy</li>
-          <li class="list-group-item">Interpretability</li>
+          <li class="list-group-item">Fairness, bias, transparency, and accountability</li>
+          <li class="list-group-item">Community engagement and data privacy</li>
         </ul>
       </li>
     </ul>
-
+    
     <ul class="list-group" style="margin-top: 16px;">
-      <li class="list-group-item list-group-item-secondary"><b>Applications, systems, and tools</b>
+      <li class="list-group-item list-group-item-dark"><b>Applications, Systems, and Tools</b>
         <ul class="list-group list-group-numbered">
-          <li class="list-group-item">Urban digital twin</li>
-          <li class="list-group-item">AR, VR, and metaverse for urban planning</li>
-          <li class="list-group-item">Carbon neutrality</li>
-          <li class="list-group-item">Urban utility/resources allocation</li>
+          <li class="list-group-item">Urban digital twins, AR/VR in urban planning</li>
           <li class="list-group-item">Planning support systems for policymakers</li>
+          <li class="list-group-item">Carbon neutrality and utility/resource allocation</li>
         </ul>
       </li>
     </ul>
+    
+    
 
   </div>
 </div>
 
 
-    <hr class="featurette-divider" style="margin: 60px 0;">
+  <hr class="featurette-divider" style="margin: 60px 0;">
 
-    <h1 id="submission">Submission Details</h1>
-    <p class="lead" style="margin-top: 30px; text-align: left; font-size: 32px; font-weight: bold; color: #D3D3D3;">Coming Soon</p>
+  <h1 id="submission">Submission Details</h1>
+  <p style="text-align: justify;">
+    We welcome full-length papers, work-in-progress, extended abstracts, and position papers. 
+      Papers should be submitted in the AAAI format. Papers previously submitted to other journals or conferences are welcome. 
+      We accept both short papers (no more than 4 pages) and long papers (no more than 8 pages). 
+      Each submission will undergo a double-blind peer-review process. 
+      Papers accepted by the workshop will not be published but only for demonstration in the workshop.
+  </p>  
+
+  <p style="text-align: justify;">
+      The workshop uses EasyChair for paper submission and review. 
+      <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__easychair.org_conferences_-3Fconf-3Dai4up&d=DwIDaQ&c=KXXihdR8fRNGFkKiMQzstpt6drHDqSenG-8Qi3URQqo&r=dqOCds4_f2zlVi6Xdwtrktbt-Pqh2embh69jsy91Jtw&m=m89fv66iSAlJEXJh8veoLm5Mhoy7bblTz0w1sKJ_IroNH4LfITnoUdLKqoPNKDze&s=ba3W6wB0YgEJ2Bh8jwAi9GwdI_fYjD-tHyaXMd7M-iA&e=" target="_blank" style="color: #007bff; text-decoration: underline;">
+          Submit your paper here
+      </a>.
+  </p>
+
+
 
 
     <hr class="featurette-divider" style="margin: 60px 0;">
@@ -377,27 +401,20 @@
 
     <!-- Three columns of text below the carousel -->
     <div class="row" style="margin-top: 30px;">
-      <h3></h3>
-      <div class="col-lg-4" style="margin-top: 30px;">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-              <image xlink:href="./img/hui.jpeg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
-          </svg>
-          <h2 class="fw-normal">Hui Xiong</h2>
-          <p>The Hong Kong University of Science and Technology (Guangzhou)</p>
-      </div><!-- /.col-lg-4 -->
+      <h3>Workshop Chair</h3>
 
       <div class="col-lg-4" style="margin-top: 30px;">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-              <image xlink:href="./img/pengyang.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
-          </svg>
-          <h2 class="fw-normal">Pengyang Wang</h2>
-          <p>University of Macau</p>
-      </div><!-- /.col-lg-4 -->
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+            <image xlink:href="./img/pengyang.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Pengyang Wang</h2>
+        <p><i>University of Macau</i><br><span style="font-size: smaller;">pywang@um.edu.mo</span></p>
+    </div>
 
+    <div class="row" style="margin-top: 30px;"></div>
+    <h3>Workshop Committee</h3>
       <div class="col-lg-4" style="margin-top: 30px;">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
               <title>Placeholder</title>
@@ -405,7 +422,8 @@
               <image xlink:href="./img/quanjige.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
           </svg>
           <h2 class="fw-normal">Steven Jige Quan</h2>
-          <p>Seoul National University</p>
+          <p><i>Seoul National University</i><br><span style="font-size: smaller;">sjquan@snu.ac.kr</span></p>
+
       </div><!-- /.col-lg-4 -->
 
       <div class="col-lg-4" style="margin-top: 30px;">
@@ -415,15 +433,29 @@
               <image xlink:href="./img/Xinyue_Ye.jpeg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
           </svg>
           <h2 class="fw-normal">Xinyue Ye</h2>
-          <p>Texas A&M University</p>
+          <p><i>Texas A&M University</i><br><span style="font-size: smaller;">xinyue.ye@tamu.edu</span></p>
       </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+      <div class="col-lg-4" style="margin-top: 30px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+            <image xlink:href="./img/hui.jpeg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Hui Xiong</h2>
+        <p><i>Hong Kong University of Science and Technology</i><br><span style="font-size: smaller;">xionghui@hkust-gz.edu.cn</span></p>
+    </div>
+
+  </div><!-- /.row -->
 
 
     <hr class="featurette-divider" style="margin: 60px 0;">
 
     <h1 id="agenda">Agenda</h1>
     <div class="col-lg-12" style="margin-top: 60px;">
+      <p style="text-align: justify;">
+        The workshop will follow a half-day format, focusing on paper presentations, poster sessions, keynote and invited talks. We anticipate attracting a minimum of 75 and potentially up to 100 attendees. People who have been accepted to give paper presentations, posters are invited to attend. In addition, the workshop is open to researchers, industry professionals, and policymakers interested in AI applications for urban planning. Due to venue capacity, attendance may be limited.
+      </p>
+      
         <style>
           table, table tr th, table tr td { 
               border: 1px solid #000000; 
