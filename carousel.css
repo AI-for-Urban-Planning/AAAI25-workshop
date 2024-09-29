@@ -31,6 +31,10 @@ body {
 }
 
 .carousel-caption {
+  position: absolute;
+  top: 50%; /* 纵向居中 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%); /* 使文字完全居中 */
   z-index: 2; /* 确保文字在图片之上 */
   color: white;
   padding: 10px;
