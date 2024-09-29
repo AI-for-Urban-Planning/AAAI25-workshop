@@ -441,78 +441,97 @@
     <hr class="featurette-divider" style="margin: 60px 0;">
 
     <h1 id="agenda">Agenda</h1>
-    <div class="col-lg-12" style="margin-top: 60px;">
-      <p style="text-align: justify;">
-        The workshop will follow a half-day format, focusing on paper presentations, poster sessions, keynote and invited talks. We anticipate attracting a minimum of 75 and potentially up to 100 attendees. People who have been accepted to give paper presentations, posters are invited to attend. In addition, the workshop is open to researchers, industry professionals, and policymakers interested in AI applications for urban planning. Due to venue capacity, attendance may be limited.
-      </p>
-      
-        <style>
-          table, table tr th, table tr td { 
-              border: 1px solid #000000; 
-              height: 50px; 
-              white-space: pre-line; 
-              text-align: center; /* Center the text in the table */
-          }
-          table { 
-              width: 800px; 
-              min-height: 25px; 
-              line-height: 25px; 
-              border-collapse: collapse; 
-              margin: 0 auto; /* Centered table */
-          } 
-          th:nth-child(1), td:nth-child(1) { width: 150px; } /* Adjusted width for Time column */
-          th:nth-child(2), td:nth-child(2) { width: 400px; }
-          th:nth-child(3), td:nth-child(3) { width: 250px; } /* Adjusted width for Presenter column */
-        </style>
+<div class="col-lg-12" style="margin-top: 60px;">
+  <p style="text-align: justify;">
+    The workshop will follow a half-day format, focusing on paper presentations, poster sessions, keynote and invited talks. We anticipate attracting a minimum of 75 and potentially up to 100 attendees. People who have been accepted to give paper presentations, posters are invited to attend. In addition, the workshop is open to researchers, industry professionals, and policymakers interested in AI applications for urban planning. Due to venue capacity, attendance may be limited.
+  </p>
+  
+  <style>
+    /* Basic table styling */
+    table, table tr th, table tr td { 
+        border: 1px solid #000000; 
+        height: 50px; 
+        white-space: pre-line; 
+        text-align: center; /* Center the text in the table */
+    }
 
-        <table border="1">
-          <tbody>
-            <tr>
-              <td colspan="3">Date: March 3, 2025, Location: TBD</td>
-            </tr>
-            <tr>
-              <td>Time</td>
-              <td>Session</td>
-              <td>Presenter/Author</td>
-            </tr>
-            <tr>
-              <td>08:30-08:40</td>
-              <td>Opening</td>
-              <td>Organizers</td>
-            </tr>
-            <tr>
-              <td>08:40-09:20</td>
-              <td>Keynote 1</td>
-              <td>Speaker TBD</td>
-            </tr>
-            <tr>
-              <td>09:20-09:50</td>
-              <td>Keynote 2</td>
-              <td>Speaker TBD</td>
-            </tr>
-            <tr>
-              <td>09:50-10:20</td>
-              <td>Keynote 3</td>
-              <td>Speaker TBD</td>
-            </tr>
-            <tr>
-              <td>10:20-11:20</td>
-              <td>Oral Presentations</td>
-              <td>Selected Authors</td>
-            </tr>
-            <tr>
-              <td>11:20-12:00</td>
-              <td>Poster Session</td>
-              <td>All Authors</td>
-            </tr>
-          </tbody>
-          <colgroup>
-            <col>
-            <col>
-            <col>
-          </colgroup>
-        </table>
-    </div>
+    /* Make table responsive */
+    table { 
+        width: 100%; /* Use 100% width to allow table to scale */
+        border-collapse: collapse; 
+        margin: 0 auto; /* Centered table */
+    } 
+
+    /* Adjust column widths */
+    th:nth-child(1), td:nth-child(1) { width: 20%; } /* Adjusted width for Time column */
+    th:nth-child(2), td:nth-child(2) { width: 50%; } /* Adjusted width for Session column */
+    th:nth-child(3), td:nth-child(3) { width: 30%; } /* Adjusted width for Presenter column */
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      table, table tr th, table tr td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      table, table tr th, table tr td {
+        font-size: 10px;
+        padding: 5px;
+      }
+    }
+  </style>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <td colspan="3">Date: March 3, 2025, Location: TBD</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>Session</td>
+        <td>Presenter/Author</td>
+      </tr>
+      <tr>
+        <td>08:30-08:40</td>
+        <td>Opening</td>
+        <td>Organizers</td>
+      </tr>
+      <tr>
+        <td>08:40-09:20</td>
+        <td>Keynote 1</td>
+        <td>Speaker TBD</td>
+      </tr>
+      <tr>
+        <td>09:20-09:50</td>
+        <td>Keynote 2</td>
+        <td>Speaker TBD</td>
+      </tr>
+      <tr>
+        <td>09:50-10:20</td>
+        <td>Keynote 3</td>
+        <td>Speaker TBD</td>
+      </tr>
+      <tr>
+        <td>10:20-11:20</td>
+        <td>Oral Presentations</td>
+        <td>Selected Authors</td>
+      </tr>
+      <tr>
+        <td>11:20-12:00</td>
+        <td>Poster Session</td>
+        <td>All Authors</td>
+      </tr>
+    </tbody>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+  </table>
+</div>
+
 
 
 
