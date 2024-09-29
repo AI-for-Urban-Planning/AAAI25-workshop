@@ -40,16 +40,35 @@ body {
   align-items: center;
   text-align: center;
   max-width: 90%; /* 防止文字过长 */
-  position: absolute; /* 确保文字绝对居中 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 文字居中 */
 }
 
 .carousel-caption h1 {
-  font-size: 2rem; /* 固定字体大小 */
+  font-size: clamp(1.5rem, 4vw, 3rem); /* 动态调整字体大小 */
   line-height: 1.2;
 }
 
 .carousel-caption p {
-  font-size:
+  font-size: clamp(1rem, 2vw, 1.5rem); /* 动态调整字体大小 */
+}
+
+.carousel-caption a.btn {
+  margin-top: 15px;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* 动态调整按钮文字大小 */
+  padding: 10px 20px;
+}
+
+/* RESPONSIVE CSS */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+  }
+
+  .carousel-caption p {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+  }
+
+  .carousel-caption a.btn {
+    font-size: clamp(0.7rem, 3vw, 1rem);
+    padding: 8px 16px;
+  }
+}
