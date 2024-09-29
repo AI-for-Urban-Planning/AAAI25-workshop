@@ -1,82 +1,104 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
+/* GLOBAL STYLES */
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
+/* CUSTOMIZE THE CAROUSEL */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  position: relative;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  min-height: 50vh; /* 确保背景高度始终为视口的一半 */
+  max-height: 50vh; /* 限制最大高度 */
+  overflow: hidden;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持图片比例，不被拉伸 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+.carousel-caption {
+  z-index: 2; /* 确保文字在图片之上 */
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  max-width: 90%; /* 防止文字过长 */
+  position: absolute; /* 确保文字绝对居中 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 文字居中 */
 }
 
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -.05rem;
+.carousel-caption h1 {
+  font-size: 2rem; /* 固定字体大小 */
+  line-height: 1.2;
 }
 
-/* rtl:end:remove */
+.carousel-caption p {
+  font-size: 1.2rem; /* 固定字体大小 */
+}
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+.carousel-caption a.btn {
+  margin-top: 15px;
+  font-size: 1rem; /* 固定按钮文字大小 */
+  padding: 10px 20px;
+}
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
+/* RESPONSIVE CSS */
+@media (max-width: 768px) {
+  .carousel-item {
+    min-height: 40vh; /* 在小屏幕上减少图片高度 */
+    max-height: 40vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.8rem; /* 小屏幕下稍微调整字体大小 */
+  }
+
   .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+    font-size: 1rem; /* 小屏幕下稍微调整文字大小 */
   }
 
-  .featurette-heading {
-    font-size: 50px;
+  .carousel-caption a.btn {
+    font-size: 0.9rem; /* 小屏幕下调整按钮大小 */
+    padding: 8px 16px;
   }
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+/* 手机横屏样式 */
+@media (max-width: 768px) and (orientation: landscape) {
+  .carousel-item {
+    min-height: 30vh; /* 横屏时减少图片高度 */
+    max-height: 30vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem; /* 横屏时调整字体大小 */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* 横屏时调整文字大小 */
+  }
+
+  .carousel-caption a.btn {
+    font-size: 0.9rem; /* 横屏时调整按钮大小 */
+    padding: 8px 16px;
   }
 }
