@@ -43,7 +43,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 90%; /* 防止文字过长 */
+  width: 100%; /* 使文字区域占据图片宽度 */
+  max-width: none; /* 移除宽度限制 */
+  padding: 0 15%; /* 为两边留白，防止文字贴边 */
 }
 
 .carousel-caption h1 {
