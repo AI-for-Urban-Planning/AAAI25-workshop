@@ -74,12 +74,14 @@ body {
   }
 
   .carousel-caption h1 {
-    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    font-size: clamp(3rem, 8vw, 6rem); /* 提高最小和最大字体大小 */
+    line-height: 1.2;
   }
-
+  
   .carousel-caption p {
-    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    font-size: clamp(2rem, 4vw, 3rem); /* 提高段落的最小和最大字体大小 */
   }
+  
 
   .carousel-caption a.btn {
     font-size: clamp(0.7rem, 3vw, 1rem);
